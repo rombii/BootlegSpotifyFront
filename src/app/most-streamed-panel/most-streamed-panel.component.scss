@@ -1,0 +1,34 @@
+@mixin text_style($color, $size) {
+  color: $color;
+  font-size: $size;
+  margin: 10px;
+}
+
+
+* {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+}
+.panel {
+  width: 300px;
+  border-radius: 30px;
+  img {
+    border-radius: 30px 30px 0 0;
+    width: 100%;
+    display: block;
+  }
+  .text {
+    background-color: #252836;
+    padding: 5px 20px;
+    border-radius: 0 0 30px 30px;
+    .author {
+      @include text_style(#b7b9d2, 13px);
+    }
+    .title {
+      @include text_style(#fff, 16px);
+    }
+    .streams {
+      @include text_style(#808191, 12px);
+    }
+  }
+}

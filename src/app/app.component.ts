@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { MostStreamedPanelComponent } from './most-streamed-panel/most-streamed-panel.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, MostStreamedPanelComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
